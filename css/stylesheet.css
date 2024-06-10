@@ -1,0 +1,50 @@
+body{
+    width: 100vw;
+    margin:0;   /* i set these to 0 to remove custom browser styling */
+    padding:0;  /* i set these to 0 to remove custom browser styling */
+}
+
+main {
+    width: 1500px; /* width of our actual portfolio */
+    max-width: 1500px; /* max width of our actual portfolio */
+    margin: 0 auto; /* auto in this case makes margin equal on both sides*/
+    background-color: #969665;
+}
+
+.header-section {
+    width: 100%;
+    display: flex;
+    height:900px;
+    display: flex;
+    background-color: bisque;
+}
+
+.header-left{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.header-right{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+    
+.nav-menu{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    background-color: #B92424;
+}
+
+.navigation-button{
+    color:white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none; 
+}
+.navigation-button:hover{
+    background-color: #761717;
+}
