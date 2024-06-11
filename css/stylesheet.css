@@ -11,6 +11,11 @@ main {
     background-color: #969665;
 }
 
+p {
+    margin:0;   /* i set these to 0 to remove custom browser styling */
+    padding:0;  /* i set these to 0 to remove custom browser styling */
+}
+
 .header-section {
     width: 100%;
     display: flex;
@@ -18,17 +23,57 @@ main {
     display: flex;
     background-color: bisque;
 }
+img{
+    opacity: 0.1;
+}
 
 .header-left{
     width: 100%;
     height: 100%;
     background-color: black;
+    font-weight: 800;
+}
+
+.header-left-content{
+    z-index: 200; /* this makes it appear above all the rest ( look into this once) */
+    position: relative;
+    width: 80%;
+    top: 300px;
+    left: 30%;
+    color: white;
+}
+
+.header-left-content h1{  /* this means: ALL <h1> tags IN a div with the "header-left-content" class*/
+     font-size: 70px;
+     margin:2px
+}
+.header-left-content h2{  /* this means: ALL <h2> tags IN a div with the "header-left-content" class  */
+     font-size: 40px;
+     margin:2px
+}
+
+.header-left-title{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    color: whitesmoke;
+    letter-spacing: 7px; /* i added this to space out the letters its a tat better looking   */
+}
+
+.yellow-bar{
+    padding: 10px 30px;   /* if you do it like this , first is  top and bottom, second is left and right  */
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    background-color: #EBAD3E;
+    margin-bottom: 10px;
 }
 
 .header-right{
     width: 100%;
     height: 100%;
     background-color: pink;
+    overflow: hidden;
 }
     
 .nav-menu{
